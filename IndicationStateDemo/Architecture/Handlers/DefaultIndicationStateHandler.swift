@@ -8,16 +8,16 @@
 import Foundation
 
 class DefaultIndicationStateHandler: IndicationStateHandler {
-    var fullscreenDisplayer: FullscreenIndicationDisplayer
+    var indicationController: any IndicationController
     var toastManager: ToastDisplayer
     var customStateHandler: CustomIndicationStateDisplayer?
 
     init(
-        fullscreenDisplayer: FullscreenIndicationDisplayer,
+        indicationController: any IndicationController,
         toastManager: ToastDisplayer,
         customStateHandler: CustomIndicationStateDisplayer?
     ) {
-        self.fullscreenDisplayer = fullscreenDisplayer
+        self.indicationController = indicationController
         self.toastManager = toastManager
         self.customStateHandler = customStateHandler
     }

@@ -13,21 +13,21 @@ protocol TPError: Error {
 
 enum ErrorType {
     case fullscreen(error: FullscreenError)
-    case toast(error: ToastError)
+    case toast(error: ToastModel)
     case custom(error: CustomError)
 }
 
 // Type-Erasure для TPError
 struct AnyTPError: TPError {
-    private var base: TPError
-
-    init(_ base: TPError) {
-        self.base = base
-    }
-
     var type: ErrorType {
         get {
             base.type
         }
+    }
+    
+    private var base: any TPError
+
+    init(_ base: any TPError) {
+        self.base = base
     }
 }

@@ -13,6 +13,6 @@ enum ApiRequestManagerError: Error {
 
 extension ApiRequestManagerError: TPError {
     var type: ErrorType {
-        .toast(error: DefaultToastError(title: "JEPA"))
+        .toast(error: TPToastModel(type: .error(message: "ApiRequestManagerError")))
     }
 }

@@ -8,7 +8,7 @@
 import Combine
 import UIKit
 
-final class MainView: UIView {
+final class MainView: UIView, DefaultIndicationView {
     var actionPublisher: AnyPublisher<Void, Never> {
         button.publisher(for: .touchUpInside)
             .mapToVoid()
@@ -24,6 +24,8 @@ final class MainView: UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
         configure()
+
+        registrateDefaultStateViews()
     }
 
     required init?(coder: NSCoder) {
@@ -33,7 +35,7 @@ final class MainView: UIView {
     private func configure() {
         backgroundColor = .white
         let label = UILabel(frame: .zero)
-        label.text = "JEPA"
+        label.text = "text"
         label.translatesAutoresizingMaskIntoConstraints = false
         addSubview(label)
 

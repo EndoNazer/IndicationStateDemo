@@ -11,8 +11,3 @@ protocol FullscreenError {
     var title: String { get }
     var description: String { get }
 }
-
-struct DefaultFullscreenError: FullscreenError {
-    let title: String
-    let description: String
-}

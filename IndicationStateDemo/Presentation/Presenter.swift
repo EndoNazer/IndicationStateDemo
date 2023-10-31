@@ -22,7 +22,15 @@ final class Presenter: DefaultIndicationStateHandler {
                 case .success:
                     self?.setState(.normal)
                 case let .failure(error):
+//                    self?.setState(.error(MainCustomState()))
+
                     self?.setState(.error(error))
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+                        self?.setState(.empty(DefaultEmptyModel(title: "EmptyState", description: "Description")))
+                    }
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 6) {
+                        self?.setState(.normal)
+                    }
                 }
             })
             .store(in: &subscriptions)

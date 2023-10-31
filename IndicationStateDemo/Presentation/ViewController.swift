@@ -8,10 +8,9 @@
 import Combine
 import UIKit
 
-final class ViewController: UIViewController, FullscreenIndicationDisplayer {
-
-    lazy var presenter = Presenter(fullscreenDisplayer: self, toastManager: TPToastDisplayer(), customStateHandler: self)
-    let rootView = MainView()
+final class ViewController: UIViewController, DefaultIndicationController {
+    var rootView = MainView(frame: .zero)
+    lazy var presenter = Presenter(indicationController: self, toastManager: TPToastDisplayer(), customStateHandler: self)
 
     var subscriptions = Set<AnyCancellable>()
 
@@ -31,12 +30,17 @@ final class ViewController: UIViewController, FullscreenIndicationDisplayer {
 }
 
 extension ViewController: CustomIndicationStateDisplayer {
-    func handleState(_ state: CustomIndicationState) {
+    func handleState(_ state: CustomError) {
         // Пока так, но надо на дженерик перевести, наверное. Чтобы без каста обойтись
-        guard let state = state as? MainCustomState else {
+        // upd. с дженериком, похоже, нереально сделать, чтобы не задеть презентер
+        guard let state = state as? MainCustomState.StateType else {
             return
         }
 
-        print(state.type.rawValue)
+        print(state.rawValue)
+    }
+
+    func hideAll() {
+
     }
 }

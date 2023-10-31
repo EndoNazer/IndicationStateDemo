@@ -17,7 +17,7 @@ struct ApiRequestServiceError: Error {
     var message: String {
         switch errorType {
         case .someApiRequestServiceError:
-            return String(describing: self)
+            return "Повторите запрос"
         }
     }
 
@@ -30,7 +30,7 @@ extension ApiRequestServiceError: TPError {
     var type: ErrorType {
         .fullscreen(
             error: DefaultFullscreenError(
-                title: errorType.rawValue,
+                title: "Что-то пошло не так",
                 description: message
             )
         )

@@ -7,10 +7,10 @@
 
 import Foundation
 
-struct MainCustomState: CustomIndicationState {
-    let type: MainCustomStateType
-}
+struct MainCustomState: TPError {
+    enum StateType: String, CustomError {
+        case testError
+    }
 
-enum MainCustomStateType: String, CustomError {
-    case error
+    var type: ErrorType = .custom(error: StateType.testError)
 }

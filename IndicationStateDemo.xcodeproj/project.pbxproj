@@ -7,66 +7,92 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A584E2802AEFB2F9005B0714 /* EmptyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A584E27F2AEFB2F9005B0714 /* EmptyModel.swift */; };
+		A5E172182AEFEB0100DA350E /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E172102AEFEB0100DA350E /* ApiManager.swift */; };
+		A5E172192AEFEB0100DA350E /* ApiManagerError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E172112AEFEB0100DA350E /* ApiManagerError.swift */; };
+		A5E1721A2AEFEB0100DA350E /* ApiRequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E172132AEFEB0100DA350E /* ApiRequestManager.swift */; };
+		A5E1721B2AEFEB0100DA350E /* ApiRequestManagerError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E172142AEFEB0100DA350E /* ApiRequestManagerError.swift */; };
+		A5E1721C2AEFEB0100DA350E /* ApiRequestService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E172162AEFEB0100DA350E /* ApiRequestService.swift */; };
+		A5E1721D2AEFEB0100DA350E /* ApiRequestServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E172172AEFEB0100DA350E /* ApiRequestServiceError.swift */; };
+		A5E172222AEFEB5000DA350E /* ToastModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E1721F2AEFEB5000DA350E /* ToastModel.swift */; };
+		A5E172232AEFEB5000DA350E /* CustomError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E172202AEFEB5000DA350E /* CustomError.swift */; };
+		A5E172242AEFEB5000DA350E /* FullscreenError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E172212AEFEB5000DA350E /* FullscreenError.swift */; };
+		A5E172312AEFEB5F00DA350E /* IndicationViewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E172262AEFEB5F00DA350E /* IndicationViewProvider.swift */; };
+		A5E172322AEFEB5F00DA350E /* IndicationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E172272AEFEB5F00DA350E /* IndicationView.swift */; };
+		A5E172332AEFEB5F00DA350E /* DefaultIndicationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E172292AEFEB5F00DA350E /* DefaultIndicationView.swift */; };
+		A5E172342AEFEB5F00DA350E /* DefaultIndicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E1722A2AEFEB5F00DA350E /* DefaultIndicationController.swift */; };
+		A5E172352AEFEB5F00DA350E /* DefaultEmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E1722C2AEFEB5F00DA350E /* DefaultEmptyView.swift */; };
+		A5E172362AEFEB5F00DA350E /* DefaultLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E1722D2AEFEB5F00DA350E /* DefaultLoadingView.swift */; };
+		A5E172372AEFEB5F00DA350E /* DefaultErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E1722E2AEFEB5F00DA350E /* DefaultErrorView.swift */; };
+		A5E172382AEFEB5F00DA350E /* IndicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E1722F2AEFEB5F00DA350E /* IndicationController.swift */; };
+		A5E172392AEFEB5F00DA350E /* IndicationHostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E172302AEFEB5F00DA350E /* IndicationHostView.swift */; };
+		A5E1723B2AF0CC5700DA350E /* DefaultEmptyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E1723A2AF0CC5700DA350E /* DefaultEmptyModel.swift */; };
+		A5E1723D2AF0CC7E00DA350E /* IndicationStateKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E1723C2AF0CC7E00DA350E /* IndicationStateKey.swift */; };
+		A5E172422AF0CCD200DA350E /* DefaultFullscreenError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E172412AF0CCD200DA350E /* DefaultFullscreenError.swift */; };
+		A5E172452AF0DD5100DA350E /* TPToastModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E172442AF0DD5100DA350E /* TPToastModel.swift */; };
+		A5E1724B2AF0DE8000DA350E /* ToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E1724A2AF0DE8000DA350E /* ToastView.swift */; };
 		A5FAC2622AEA91860037369D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5FAC2612AEA91860037369D /* AppDelegate.swift */; };
 		A5FAC2662AEA91860037369D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5FAC2652AEA91860037369D /* ViewController.swift */; };
 		A5FAC26B2AEA91870037369D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5FAC26A2AEA91870037369D /* Assets.xcassets */; };
 		A5FAC26E2AEA91870037369D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5FAC26C2AEA91870037369D /* LaunchScreen.storyboard */; };
-		A5FAC27B2AEA94E50037369D /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5FAC27A2AEA94E40037369D /* ApiManager.swift */; };
-		A5FAC27D2AEA94F60037369D /* ApiRequestService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5FAC27C2AEA94F60037369D /* ApiRequestService.swift */; };
-		A5FAC27F2AEA95B20037369D /* ApiRequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5FAC27E2AEA95B20037369D /* ApiRequestManager.swift */; };
-		A5FAC2842AEA98E90037369D /* ApiRequestManagerError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5FAC2832AEA98E90037369D /* ApiRequestManagerError.swift */; };
-		A5FAC2862AEA98F10037369D /* ApiRequestServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5FAC2852AEA98F10037369D /* ApiRequestServiceError.swift */; };
-		A5FAC2882AEA98F80037369D /* ApiManagerError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5FAC2872AEA98F80037369D /* ApiManagerError.swift */; };
 		A5FAC28A2AEA9B4B0037369D /* TPResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5FAC2892AEA9B4B0037369D /* TPResult.swift */; };
 		A5FAC28C2AEA9CAE0037369D /* TPError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5FAC28B2AEA9CAE0037369D /* TPError.swift */; };
-		A5FAC28E2AEAA1BB0037369D /* FullscreenError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5FAC28D2AEAA1BB0037369D /* FullscreenError.swift */; };
-		A5FAC2902AEAA1F90037369D /* ToastError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5FAC28F2AEAA1F90037369D /* ToastError.swift */; };
-		A5FAC2922AEAA2470037369D /* CustomError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5FAC2912AEAA2470037369D /* CustomError.swift */; };
 		A5FAC2952AEAC5E20037369D /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5FAC2942AEAC5E20037369D /* View.swift */; };
 		A5FAC2972AEAC5EC0037369D /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5FAC2962AEAC5EC0037369D /* Presenter.swift */; };
 		A5FAC2992AEBAD2A0037369D /* IndicationStateHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5FAC2982AEBAD2A0037369D /* IndicationStateHandler.swift */; };
-		A5FAC29B2AEBAD6C0037369D /* FullscreenIndicationDisplayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5FAC29A2AEBAD6C0037369D /* FullscreenIndicationDisplayer.swift */; };
 		A5FAC29E2AEBADF60037369D /* ToastDisplayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5FAC29D2AEBADF60037369D /* ToastDisplayer.swift */; };
 		A5FAC2A12AEBBDA80037369D /* UIView+prepare.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5FAC2A02AEBBDA80037369D /* UIView+prepare.swift */; };
 		A5FAC2A32AEBBFB60037369D /* UIKit+Combine.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5FAC2A22AEBBFB60037369D /* UIKit+Combine.swift */; };
 		A5FAC2A52AEBC1490037369D /* Publisher+mapToVoid.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5FAC2A42AEBC1490037369D /* Publisher+mapToVoid.swift */; };
 		A5FAC2A72AEBCB920037369D /* IndicationState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5FAC2A62AEBCB920037369D /* IndicationState.swift */; };
 		A5FAC2AB2AEBD18E0037369D /* DefaultIndicationStateHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5FAC2AA2AEBD18E0037369D /* DefaultIndicationStateHandler.swift */; };
-		A5FAC2AD2AEBD2D30037369D /* CustomIndicationState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5FAC2AC2AEBD2D30037369D /* CustomIndicationState.swift */; };
 		A5FAC2AF2AEBD9170037369D /* MainCustomState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5FAC2AE2AEBD9170037369D /* MainCustomState.swift */; };
 		A5FAC2B12AEBDA450037369D /* HiddenableDisplayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5FAC2B02AEBDA450037369D /* HiddenableDisplayer.swift */; };
 		A5FAC2B42AEBDA8D0037369D /* CustomIndicationStateDisplayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5FAC2B32AEBDA8D0037369D /* CustomIndicationStateDisplayer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A584E27F2AEFB2F9005B0714 /* EmptyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyModel.swift; sourceTree = "<group>"; };
+		A5E172102AEFEB0100DA350E /* ApiManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
+		A5E172112AEFEB0100DA350E /* ApiManagerError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiManagerError.swift; sourceTree = "<group>"; };
+		A5E172132AEFEB0100DA350E /* ApiRequestManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiRequestManager.swift; sourceTree = "<group>"; };
+		A5E172142AEFEB0100DA350E /* ApiRequestManagerError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiRequestManagerError.swift; sourceTree = "<group>"; };
+		A5E172162AEFEB0100DA350E /* ApiRequestService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiRequestService.swift; sourceTree = "<group>"; };
+		A5E172172AEFEB0100DA350E /* ApiRequestServiceError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiRequestServiceError.swift; sourceTree = "<group>"; };
+		A5E1721F2AEFEB5000DA350E /* ToastModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToastModel.swift; sourceTree = "<group>"; };
+		A5E172202AEFEB5000DA350E /* CustomError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomError.swift; sourceTree = "<group>"; };
+		A5E172212AEFEB5000DA350E /* FullscreenError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FullscreenError.swift; sourceTree = "<group>"; };
+		A5E172262AEFEB5F00DA350E /* IndicationViewProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndicationViewProvider.swift; sourceTree = "<group>"; };
+		A5E172272AEFEB5F00DA350E /* IndicationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndicationView.swift; sourceTree = "<group>"; };
+		A5E172292AEFEB5F00DA350E /* DefaultIndicationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultIndicationView.swift; sourceTree = "<group>"; };
+		A5E1722A2AEFEB5F00DA350E /* DefaultIndicationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultIndicationController.swift; sourceTree = "<group>"; };
+		A5E1722C2AEFEB5F00DA350E /* DefaultEmptyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultEmptyView.swift; sourceTree = "<group>"; };
+		A5E1722D2AEFEB5F00DA350E /* DefaultLoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultLoadingView.swift; sourceTree = "<group>"; };
+		A5E1722E2AEFEB5F00DA350E /* DefaultErrorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultErrorView.swift; sourceTree = "<group>"; };
+		A5E1722F2AEFEB5F00DA350E /* IndicationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndicationController.swift; sourceTree = "<group>"; };
+		A5E172302AEFEB5F00DA350E /* IndicationHostView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndicationHostView.swift; sourceTree = "<group>"; };
+		A5E1723A2AF0CC5700DA350E /* DefaultEmptyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultEmptyModel.swift; sourceTree = "<group>"; };
+		A5E1723C2AF0CC7E00DA350E /* IndicationStateKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndicationStateKey.swift; sourceTree = "<group>"; };
+		A5E172412AF0CCD200DA350E /* DefaultFullscreenError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultFullscreenError.swift; sourceTree = "<group>"; };
+		A5E172442AF0DD5100DA350E /* TPToastModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TPToastModel.swift; sourceTree = "<group>"; };
+		A5E1724A2AF0DE8000DA350E /* ToastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastView.swift; sourceTree = "<group>"; };
 		A5FAC25E2AEA91860037369D /* IndicationStateDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IndicationStateDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5FAC2612AEA91860037369D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A5FAC2652AEA91860037369D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A5FAC26A2AEA91870037369D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A5FAC26D2AEA91870037369D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A5FAC26F2AEA91870037369D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A5FAC27A2AEA94E40037369D /* ApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
-		A5FAC27C2AEA94F60037369D /* ApiRequestService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRequestService.swift; sourceTree = "<group>"; };
-		A5FAC27E2AEA95B20037369D /* ApiRequestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRequestManager.swift; sourceTree = "<group>"; };
-		A5FAC2832AEA98E90037369D /* ApiRequestManagerError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRequestManagerError.swift; sourceTree = "<group>"; };
-		A5FAC2852AEA98F10037369D /* ApiRequestServiceError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRequestServiceError.swift; sourceTree = "<group>"; };
-		A5FAC2872AEA98F80037369D /* ApiManagerError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManagerError.swift; sourceTree = "<group>"; };
 		A5FAC2892AEA9B4B0037369D /* TPResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TPResult.swift; sourceTree = "<group>"; };
 		A5FAC28B2AEA9CAE0037369D /* TPError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TPError.swift; sourceTree = "<group>"; };
-		A5FAC28D2AEAA1BB0037369D /* FullscreenError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullscreenError.swift; sourceTree = "<group>"; };
-		A5FAC28F2AEAA1F90037369D /* ToastError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastError.swift; sourceTree = "<group>"; };
-		A5FAC2912AEAA2470037369D /* CustomError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomError.swift; sourceTree = "<group>"; };
 		A5FAC2942AEAC5E20037369D /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
 		A5FAC2962AEAC5EC0037369D /* Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
 		A5FAC2982AEBAD2A0037369D /* IndicationStateHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndicationStateHandler.swift; sourceTree = "<group>"; };
-		A5FAC29A2AEBAD6C0037369D /* FullscreenIndicationDisplayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullscreenIndicationDisplayer.swift; sourceTree = "<group>"; };
 		A5FAC29D2AEBADF60037369D /* ToastDisplayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastDisplayer.swift; sourceTree = "<group>"; };
 		A5FAC2A02AEBBDA80037369D /* UIView+prepare.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+prepare.swift"; sourceTree = "<group>"; };
 		A5FAC2A22AEBBFB60037369D /* UIKit+Combine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIKit+Combine.swift"; sourceTree = "<group>"; };
 		A5FAC2A42AEBC1490037369D /* Publisher+mapToVoid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Publisher+mapToVoid.swift"; sourceTree = "<group>"; };
 		A5FAC2A62AEBCB920037369D /* IndicationState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndicationState.swift; sourceTree = "<group>"; };
 		A5FAC2AA2AEBD18E0037369D /* DefaultIndicationStateHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultIndicationStateHandler.swift; sourceTree = "<group>"; };
-		A5FAC2AC2AEBD2D30037369D /* CustomIndicationState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomIndicationState.swift; sourceTree = "<group>"; };
 		A5FAC2AE2AEBD9170037369D /* MainCustomState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCustomState.swift; sourceTree = "<group>"; };
 		A5FAC2B02AEBDA450037369D /* HiddenableDisplayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiddenableDisplayer.swift; sourceTree = "<group>"; };
 		A5FAC2B32AEBDA8D0037369D /* CustomIndicationStateDisplayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomIndicationStateDisplayer.swift; sourceTree = "<group>"; };
@@ -83,6 +109,94 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A5E1720E2AEFEB0100DA350E /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				A5E1720F2AEFEB0100DA350E /* ApiManager */,
+				A5E172122AEFEB0100DA350E /* ApiRequestManager */,
+				A5E172152AEFEB0100DA350E /* ApiRequestService */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		A5E1720F2AEFEB0100DA350E /* ApiManager */ = {
+			isa = PBXGroup;
+			children = (
+				A5E172102AEFEB0100DA350E /* ApiManager.swift */,
+				A5E172112AEFEB0100DA350E /* ApiManagerError.swift */,
+			);
+			path = ApiManager;
+			sourceTree = "<group>";
+		};
+		A5E172122AEFEB0100DA350E /* ApiRequestManager */ = {
+			isa = PBXGroup;
+			children = (
+				A5E172132AEFEB0100DA350E /* ApiRequestManager.swift */,
+				A5E172142AEFEB0100DA350E /* ApiRequestManagerError.swift */,
+			);
+			path = ApiRequestManager;
+			sourceTree = "<group>";
+		};
+		A5E172152AEFEB0100DA350E /* ApiRequestService */ = {
+			isa = PBXGroup;
+			children = (
+				A5E172162AEFEB0100DA350E /* ApiRequestService.swift */,
+				A5E172172AEFEB0100DA350E /* ApiRequestServiceError.swift */,
+			);
+			path = ApiRequestService;
+			sourceTree = "<group>";
+		};
+		A5E172252AEFEB5F00DA350E /* Indication */ = {
+			isa = PBXGroup;
+			children = (
+				A5E172282AEFEB5F00DA350E /* Default */,
+				A5E172262AEFEB5F00DA350E /* IndicationViewProvider.swift */,
+				A5E172272AEFEB5F00DA350E /* IndicationView.swift */,
+				A5E1722F2AEFEB5F00DA350E /* IndicationController.swift */,
+				A5E172302AEFEB5F00DA350E /* IndicationHostView.swift */,
+			);
+			path = Indication;
+			sourceTree = "<group>";
+		};
+		A5E172282AEFEB5F00DA350E /* Default */ = {
+			isa = PBXGroup;
+			children = (
+				A5E1722B2AEFEB5F00DA350E /* Views */,
+				A5E172292AEFEB5F00DA350E /* DefaultIndicationView.swift */,
+				A5E1722A2AEFEB5F00DA350E /* DefaultIndicationController.swift */,
+			);
+			path = Default;
+			sourceTree = "<group>";
+		};
+		A5E1722B2AEFEB5F00DA350E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A5E1722C2AEFEB5F00DA350E /* DefaultEmptyView.swift */,
+				A5E1722D2AEFEB5F00DA350E /* DefaultLoadingView.swift */,
+				A5E1722E2AEFEB5F00DA350E /* DefaultErrorView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A5E1723E2AF0CCB700DA350E /* DefaultModels */ = {
+			isa = PBXGroup;
+			children = (
+				A5E172412AF0CCD200DA350E /* DefaultFullscreenError.swift */,
+				A5E1723A2AF0CC5700DA350E /* DefaultEmptyModel.swift */,
+			);
+			path = DefaultModels;
+			sourceTree = "<group>";
+		};
+		A5E172432AF0DD3D00DA350E /* ToastDisplayer */ = {
+			isa = PBXGroup;
+			children = (
+				A5FAC29D2AEBADF60037369D /* ToastDisplayer.swift */,
+				A5E172442AF0DD5100DA350E /* TPToastModel.swift */,
+				A5E1724A2AF0DE8000DA350E /* ToastView.swift */,
+			);
+			path = ToastDisplayer;
+			sourceTree = "<group>";
+		};
 		A5FAC2552AEA91860037369D = {
 			isa = PBXGroup;
 			children = (
@@ -105,8 +219,6 @@
 				A5FAC29F2AEBBD9E0037369D /* Extensions */,
 				A5FAC2932AEAC5D40037369D /* Presentation */,
 				A5FAC2792AEA94BB0037369D /* Architecture */,
-				A5FAC2782AEA94B30037369D /* Errors */,
-				A5FAC2752AEA94A20037369D /* Service */,
 				A5FAC2612AEA91860037369D /* AppDelegate.swift */,
 				A5FAC26A2AEA91870037369D /* Assets.xcassets */,
 				A5FAC26C2AEA91870037369D /* LaunchScreen.storyboard */,
@@ -115,29 +227,10 @@
 			path = IndicationStateDemo;
 			sourceTree = "<group>";
 		};
-		A5FAC2752AEA94A20037369D /* Service */ = {
-			isa = PBXGroup;
-			children = (
-				A5FAC2822AEA97650037369D /* ApiRequestManager */,
-				A5FAC2812AEA975D0037369D /* ApiRequestService */,
-				A5FAC2802AEA97550037369D /* ApiManager */,
-			);
-			path = Service;
-			sourceTree = "<group>";
-		};
-		A5FAC2782AEA94B30037369D /* Errors */ = {
-			isa = PBXGroup;
-			children = (
-				A5FAC28D2AEAA1BB0037369D /* FullscreenError.swift */,
-				A5FAC28F2AEAA1F90037369D /* ToastError.swift */,
-				A5FAC2912AEAA2470037369D /* CustomError.swift */,
-			);
-			path = Errors;
-			sourceTree = "<group>";
-		};
 		A5FAC2792AEA94BB0037369D /* Architecture */ = {
 			isa = PBXGroup;
 			children = (
+				A5E172252AEFEB5F00DA350E /* Indication */,
 				A5FAC2B52AEBE87B0037369D /* Displayers */,
 				A5FAC2B22AEBDA7F0037369D /* Handlers */,
 				A5FAC2A82AEBD0D80037369D /* Models */,
@@ -145,36 +238,10 @@
 			path = Architecture;
 			sourceTree = "<group>";
 		};
-		A5FAC2802AEA97550037369D /* ApiManager */ = {
-			isa = PBXGroup;
-			children = (
-				A5FAC27A2AEA94E40037369D /* ApiManager.swift */,
-				A5FAC2872AEA98F80037369D /* ApiManagerError.swift */,
-			);
-			path = ApiManager;
-			sourceTree = "<group>";
-		};
-		A5FAC2812AEA975D0037369D /* ApiRequestService */ = {
-			isa = PBXGroup;
-			children = (
-				A5FAC27C2AEA94F60037369D /* ApiRequestService.swift */,
-				A5FAC2852AEA98F10037369D /* ApiRequestServiceError.swift */,
-			);
-			path = ApiRequestService;
-			sourceTree = "<group>";
-		};
-		A5FAC2822AEA97650037369D /* ApiRequestManager */ = {
-			isa = PBXGroup;
-			children = (
-				A5FAC27E2AEA95B20037369D /* ApiRequestManager.swift */,
-				A5FAC2832AEA98E90037369D /* ApiRequestManagerError.swift */,
-			);
-			path = ApiRequestManager;
-			sourceTree = "<group>";
-		};
 		A5FAC2932AEAC5D40037369D /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				A5E1720E2AEFEB0100DA350E /* Service */,
 				A5FAC2652AEA91860037369D /* ViewController.swift */,
 				A5FAC2942AEAC5E20037369D /* View.swift */,
 				A5FAC2962AEAC5EC0037369D /* Presenter.swift */,
@@ -196,10 +263,15 @@
 		A5FAC2A82AEBD0D80037369D /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				A5E1723E2AF0CCB700DA350E /* DefaultModels */,
 				A5FAC2892AEA9B4B0037369D /* TPResult.swift */,
+				A5E1721F2AEFEB5000DA350E /* ToastModel.swift */,
+				A5E172202AEFEB5000DA350E /* CustomError.swift */,
+				A5E172212AEFEB5000DA350E /* FullscreenError.swift */,
 				A5FAC28B2AEA9CAE0037369D /* TPError.swift */,
 				A5FAC2A62AEBCB920037369D /* IndicationState.swift */,
-				A5FAC2AC2AEBD2D30037369D /* CustomIndicationState.swift */,
+				A584E27F2AEFB2F9005B0714 /* EmptyModel.swift */,
+				A5E1723C2AF0CC7E00DA350E /* IndicationStateKey.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -216,10 +288,9 @@
 		A5FAC2B52AEBE87B0037369D /* Displayers */ = {
 			isa = PBXGroup;
 			children = (
+				A5E172432AF0DD3D00DA350E /* ToastDisplayer */,
 				A5FAC2B02AEBDA450037369D /* HiddenableDisplayer.swift */,
-				A5FAC29A2AEBAD6C0037369D /* FullscreenIndicationDisplayer.swift */,
 				A5FAC2B32AEBDA8D0037369D /* CustomIndicationStateDisplayer.swift */,
-				A5FAC29D2AEBADF60037369D /* ToastDisplayer.swift */,
 			);
 			path = Displayers;
 			sourceTree = "<group>";
@@ -294,33 +365,46 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5E172352AEFEB5F00DA350E /* DefaultEmptyView.swift in Sources */,
+				A5E172422AF0CCD200DA350E /* DefaultFullscreenError.swift in Sources */,
+				A5E1721C2AEFEB0100DA350E /* ApiRequestService.swift in Sources */,
 				A5FAC2A72AEBCB920037369D /* IndicationState.swift in Sources */,
 				A5FAC2A52AEBC1490037369D /* Publisher+mapToVoid.swift in Sources */,
 				A5FAC2A32AEBBFB60037369D /* UIKit+Combine.swift in Sources */,
+				A5E1723D2AF0CC7E00DA350E /* IndicationStateKey.swift in Sources */,
+				A5E172242AEFEB5000DA350E /* FullscreenError.swift in Sources */,
 				A5FAC2662AEA91860037369D /* ViewController.swift in Sources */,
-				A5FAC28E2AEAA1BB0037369D /* FullscreenError.swift in Sources */,
-				A5FAC2AD2AEBD2D30037369D /* CustomIndicationState.swift in Sources */,
+				A5E1721A2AEFEB0100DA350E /* ApiRequestManager.swift in Sources */,
 				A5FAC2972AEAC5EC0037369D /* Presenter.swift in Sources */,
 				A5FAC29E2AEBADF60037369D /* ToastDisplayer.swift in Sources */,
 				A5FAC2952AEAC5E20037369D /* View.swift in Sources */,
 				A5FAC28C2AEA9CAE0037369D /* TPError.swift in Sources */,
-				A5FAC29B2AEBAD6C0037369D /* FullscreenIndicationDisplayer.swift in Sources */,
-				A5FAC2842AEA98E90037369D /* ApiRequestManagerError.swift in Sources */,
+				A5E172372AEFEB5F00DA350E /* DefaultErrorView.swift in Sources */,
 				A5FAC2AF2AEBD9170037369D /* MainCustomState.swift in Sources */,
 				A5FAC2622AEA91860037369D /* AppDelegate.swift in Sources */,
-				A5FAC2922AEAA2470037369D /* CustomError.swift in Sources */,
-				A5FAC27F2AEA95B20037369D /* ApiRequestManager.swift in Sources */,
-				A5FAC2882AEA98F80037369D /* ApiManagerError.swift in Sources */,
+				A5E1721D2AEFEB0100DA350E /* ApiRequestServiceError.swift in Sources */,
+				A5E172382AEFEB5F00DA350E /* IndicationController.swift in Sources */,
 				A5FAC2A12AEBBDA80037369D /* UIView+prepare.swift in Sources */,
-				A5FAC27B2AEA94E50037369D /* ApiManager.swift in Sources */,
+				A5E172232AEFEB5000DA350E /* CustomError.swift in Sources */,
+				A5E1724B2AF0DE8000DA350E /* ToastView.swift in Sources */,
 				A5FAC2992AEBAD2A0037369D /* IndicationStateHandler.swift in Sources */,
+				A5E172362AEFEB5F00DA350E /* DefaultLoadingView.swift in Sources */,
 				A5FAC2B12AEBDA450037369D /* HiddenableDisplayer.swift in Sources */,
+				A5E172182AEFEB0100DA350E /* ApiManager.swift in Sources */,
+				A5E172192AEFEB0100DA350E /* ApiManagerError.swift in Sources */,
 				A5FAC28A2AEA9B4B0037369D /* TPResult.swift in Sources */,
 				A5FAC2AB2AEBD18E0037369D /* DefaultIndicationStateHandler.swift in Sources */,
-				A5FAC2862AEA98F10037369D /* ApiRequestServiceError.swift in Sources */,
-				A5FAC2902AEAA1F90037369D /* ToastError.swift in Sources */,
+				A5E172312AEFEB5F00DA350E /* IndicationViewProvider.swift in Sources */,
+				A5E1723B2AF0CC5700DA350E /* DefaultEmptyModel.swift in Sources */,
+				A584E2802AEFB2F9005B0714 /* EmptyModel.swift in Sources */,
+				A5E172322AEFEB5F00DA350E /* IndicationView.swift in Sources */,
 				A5FAC2B42AEBDA8D0037369D /* CustomIndicationStateDisplayer.swift in Sources */,
-				A5FAC27D2AEA94F60037369D /* ApiRequestService.swift in Sources */,
+				A5E172452AF0DD5100DA350E /* TPToastModel.swift in Sources */,
+				A5E172342AEFEB5F00DA350E /* DefaultIndicationController.swift in Sources */,
+				A5E172222AEFEB5000DA350E /* ToastModel.swift in Sources */,
+				A5E172332AEFEB5F00DA350E /* DefaultIndicationView.swift in Sources */,
+				A5E172392AEFEB5F00DA350E /* IndicationHostView.swift in Sources */,
+				A5E1721B2AEFEB0100DA350E /* ApiRequestManagerError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

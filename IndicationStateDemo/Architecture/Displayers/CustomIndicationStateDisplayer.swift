@@ -8,11 +8,5 @@
 import Foundation
 
 protocol CustomIndicationStateDisplayer: HiddenableDisplayer {
-    func handleState(_ state: CustomIndicationState)
-}
-
-// Hiddenable displayer
-
-extension CustomIndicationStateDisplayer {
-    func hideAll() {}
+    func handleState(_ state: CustomError)
 }

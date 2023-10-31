@@ -16,5 +16,9 @@ class ApiRequestManager {
     func execute() -> AnyPublisher<TPResult, Never> {
         // дополняется request и вызывается apiRequestService
         apiRequestService.execute()
+            .map { result -> Result<Void, AnyTPError> in
+                    .failure(AnyTPError(ApiRequestManagerError.someApiRequestManagerError))
+            }
+            .eraseToAnyPublisher()
     }
 }
