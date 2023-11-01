@@ -1,6 +1,6 @@
 //
 //  UIView+prepare.swift
-//  ErrorsTest
+//  IndicationStateDemo
 //
 //  Created by Daniil on 27.10.2023.
 //

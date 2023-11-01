@@ -1,6 +1,6 @@
 //
 //  ViewController.swift
-//  ErrorsTest
+//  IndicationStateDemo
 //
 //  Created by Daniil on 26.10.2023.
 //
@@ -8,9 +8,9 @@
 import Combine
 import UIKit
 
-final class ViewController: UIViewController, DefaultIndicationController {
+final class ViewController: UIViewController, FullscreenIndicationController {
     var rootView = MainView(frame: .zero)
-    lazy var presenter = Presenter(indicationController: self, toastManager: TPToastDisplayer(), customStateHandler: self)
+    lazy var presenter = Presenter(toastHandler: ToastManager())
 
     var subscriptions = Set<AnyCancellable>()
 
@@ -21,6 +21,11 @@ final class ViewController: UIViewController, DefaultIndicationController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        presenter.subscribeToIndicationState(
+            fullscreenHandler: self,
+            customHandler: self
+        )
+
         rootView.actionPublisher
             .sink { [weak self] _ in
                 self?.presenter.loadData()
@@ -29,18 +34,24 @@ final class ViewController: UIViewController, DefaultIndicationController {
     }
 }
 
-extension ViewController: CustomIndicationStateDisplayer {
-    func handleState(_ state: CustomError) {
+extension ViewController: CustomHandler {
+    func handleState(_ state: CustomState) {
+        switch state {
+        case let .show(customModel):
+            showCustomState(model: customModel)
+        case .hidden:
+            print("hide custom state")
+        }
+
+    }
+
+    private func showCustomState(model: CustomModel) {
         // Пока так, но надо на дженерик перевести, наверное. Чтобы без каста обойтись
         // upd. с дженериком, похоже, нереально сделать, чтобы не задеть презентер
-        guard let state = state as? MainCustomState.StateType else {
+        guard let state = model as? MainCustomState.StateType else {
             return
         }
 
         print(state.rawValue)
-    }
-
-    func hideAll() {
-
     }
 }

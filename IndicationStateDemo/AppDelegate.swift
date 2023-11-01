@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  ErrorsTest
+//  IndicationStateDemo
 //
 //  Created by Daniil on 26.10.2023.
 //

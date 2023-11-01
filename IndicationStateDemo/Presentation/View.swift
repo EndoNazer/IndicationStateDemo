@@ -1,6 +1,6 @@
 //
 //  View.swift
-//  ErrorsTest
+//  IndicationStateDemo
 //
 //  Created by Daniil on 26.10.2023.
 //
@@ -8,7 +8,7 @@
 import Combine
 import UIKit
 
-final class MainView: UIView, DefaultIndicationView {
+final class MainView: UIView, DefaultFullscreenIndicationView {
     var actionPublisher: AnyPublisher<Void, Never> {
         button.publisher(for: .touchUpInside)
             .mapToVoid()
